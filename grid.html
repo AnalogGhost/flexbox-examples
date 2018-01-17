@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex Grid</title>
+  <style>
+    div {
+      border: 1px solid black;
+      height: 2rem;
+      background-color: teal
+    }
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      flex-basis: 100%;
+    }
+
+    @media screen and (min-width: 800px) {
+      .column {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div class="column">
+    <!-- 100% width -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+    <!-- 50% width -->
+    </div>
+    <div class="column">
+    <!-- 50% width -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+    <!-- 33.33% width -->
+    </div>
+    <div class="column">
+    <!-- 33.33% width -->
+    </div>
+    <div class="column">
+    <!-- 33.33% width -->
+    </div>
+  </div>
+  <div class="row">
+    <button class="column">1</button>
+    <button class="column">2</button>
+    <button class="column">3</button>
+    <button class="column">4</button>
+    <button class="column">5</button>
+    <button class="column">6</button>
+    <button class="column">7</button>
+    <button class="column">8</button>
+  </div>
+</body>
+</html>
